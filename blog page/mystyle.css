@@ -1,0 +1,436 @@
+body{
+    background-color: #000;
+}
+.separater{
+    height: 2px;
+    background-color: rgb(124, 124, 125);
+}
+.separater2{
+    height: 2px;
+    background-color: #fff;
+}
+.a-item{
+    color: #000;
+}
+.a-item:hover{
+    color: #e0241b;
+}
+/* blog intro style */
+.introwrapper{
+    height: 100vh;
+    display: flex;  
+    justify-content: space-between;
+}
+.introwrapper img{
+    padding-top: 20px;
+    /* width: 500px;
+    height: 80vh; */
+    width: 650px;
+  height: 65vh;
+    padding-right: 20px;
+
+}
+.content_head{
+    padding: 50px 10px 20px 50px;
+    /* font-size: 100px; */
+    font-size: 129px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0px 0px 3px  #e0241b;
+    text-shadow: -1px 0px #e0241b,0px -1px #e0241b,1px 0px #e0241b,0px 1px #e0241b;
+}
+
+
+.inner_content{
+    padding: 10px 50px 10px;
+    color: #fff;
+}
+/* art styles */
+.art_header{
+    position: relative;
+    font-size: 100px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.innner_art{
+    padding:50px 0px 10px;
+    height: 100vh;
+}
+.main_art{
+    display: flex;
+}
+.art_left{
+    width: 474px;
+  height: 338px;
+    padding-right: 20px;
+}
+.art_right{
+    width: 474px;
+  height: 338px;
+    padding-left: 20px;
+}
+.art_content{
+    padding-top: 20px;
+    color: #fff;
+}
+/* art gallery styles */
+.art_gallery{
+    box-shadow: 0 0 20px #424242;
+}
+.gallery_head{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    color: #92201a ;
+}
+.cwhite{
+    color: #aba9a9;
+}
+.row_wise{
+    height: 100vh;
+    padding: 40px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+.cimg{
+    margin-left: 10px;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    box-shadow: 0 0 10px #424242;
+}
+.light{
+    border-radius: 50px;
+    width: 140px;
+    height: 3px;
+    background-color: #fff;
+    box-shadow:0 1px 5px #fff, 0 3px 10px #fff,0 6px 15px #fff;
+    margin-left: 80px;
+    margin-bottom: 5px;
+}
+.img_show{
+    position: relative;
+    border: 1px solid #000000;
+    padding: 30px;
+    transition: 0.5s ease;
+}
+.light_effect{
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(to top, rgba(29, 29, 29, 0.8) ,rgba(161, 161, 161, 0.25));
+    left: 40px;
+    top: 39px;
+}
+.img_show:hover{
+    border: 1px solid #fff;
+    transition: 2s ease ;
+}
+.img_des{
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.img_show:hover .img_des{
+    opacity: 1;
+    transition: 2s ease;
+}
+/* media queries starts here */
+/* @media only screen and (min-width:1201px) and (max-width:1600px){
+    .content_head{
+        font-size: 160px;
+    }
+    .introwrapper img{
+        width: 696px;
+        height: 100vh;
+    }
+}
+@media only screen and (min-width:1190px) and (max-width:1200px){
+    .content_head{
+        font-size: 96px;
+    }
+    .introwrapper img{
+        width: 500px;
+        height: 80vh;
+    }
+}
+@media only screen and (min-width:997px) and (max-width:1989px){
+    .content_head{
+        font-size: 90px;
+    }
+    .introwrapper img{
+        padding-top: 70px;
+        width: 345px;
+        height: 50vh;
+    }
+    .art_header{
+        font-size: 76px;
+    }
+    .art_content{
+        padding-top: 12px;
+    }
+    .cimg{
+        width: 235px;
+        height: 235px;
+    }
+    .light_effect{
+        width: 235px;
+        height: 235px;
+    }
+    .light{
+        width: 120px;
+        margin-left: 70px;
+    }
+}
+@media only screen and (min-width:996px){
+    .content_head{
+        font-size: 80px;
+    }
+}
+
+ */
+ @media only screen and (min-width: 1201px) and (max-width: 1600px) {
+    .content_head {
+        font-size: 93px;
+    }
+    .introwrapper img {
+        width: 525px;
+    height: 60vh;
+    padding-top: 42px
+    }
+    .img_show{
+        height: 80vh;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 1190px) and (max-width: 1200px) {
+    .content_head {
+        font-size: 95px;
+    }
+    .introwrapper img {
+        width: 500px;
+        height: 60vh;
+        padding-top: 50px;
+    }
+    .art_header {
+        font-size: 82px;
+    }
+    .art_content {
+        padding-top: 4px;
+    } 
+    .gallery_head {
+        font-size: 65px;
+    }
+    .img_show{
+        height: 70vh;
+        margin-bottom: 0px;
+    }
+    .cimg {
+        /* margin-left: 6px; */
+        /* margin-left: 76px; */
+        width: 235px;
+        height: 235px;
+        margin-left: 35px;
+    }
+    .light_effect {
+        /* left: 106px; */
+        width: 235px;
+        height: 235px;
+        /* left: 36px; */
+        left: 65px;
+    }
+    .light {
+        width: 120px; /* Added missing unit */
+        /* margin-left: 136px; */
+        /* margin-left: 65px; */
+        margin-left: 93px;
+    }
+}
+
+@media only screen and (min-width: 997px) and (max-width: 1189px) {
+    .content_head {
+        font-size: 89px;
+    }
+    .introwrapper img {
+        padding-top: 70px;
+        width: 345px;
+        height: 50vh;
+    }
+    .art_header {
+        font-size: 76px;
+    }
+    .art_content {
+        padding-top: 12px;
+    }
+    .row_wise{
+        grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    }
+    .cimg {
+        width: 235px;
+        height: 235px;
+    }
+    .light_effect {
+        width: 235px;
+        height: 235px;
+    }
+    .light {
+        width: 120px; /* Added missing unit */
+        margin-left: 70px;
+    }
+    .img_show{
+        height: 50vh;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media only screen  and (min-width: 768px) and (max-width: 996px) {
+    .content_head {
+        font-size: 50px;
+    }
+    .introwrapper img {
+        padding-top: 70px;
+        width: 345px;
+        height: 50vh;
+    }
+    .inner_content{
+        font-size: 14px;
+    }
+    .art_header {
+        font-size: 50px;
+    }
+    .art_content {
+        padding-top: 12px;
+        font-size: 13px;
+    }
+    .art_left,.art_right{
+        width: 380px;
+height: 306px;
+    }
+    .row_wise{
+        grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    }
+    .cimg {
+        width: 235px;
+        height: 235px;
+        margin-left: 20px;
+    }
+    .light_effect {
+        width: 235px;
+        height: 235px;
+        left: 50px;
+    }
+    .light {
+        width: 120px; /* Added missing unit */
+        margin-left: 78px;
+    }
+    .img_show{
+        height: 50vh;
+        margin-bottom: 0px;
+    }
+}
+@media only screen  and (max-width: 767px){
+    .back_filter{
+        width: 100%;
+        background-image: url("assets/intro_img.webp");
+        background-size: 100vh;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        z-index: -1;
+
+    }
+    .inner_content{
+        text-align: justify;
+    }
+    .introwrapper{
+        position: relative;
+    }
+    .introwrapper::before {
+        background-color: rgba(83, 45, 45, 0.45);
+    content: "";
+    filter: brightness(0.3);
+    position: absolute;
+    inset: 0%;
+    height: 67vh;
+      }
+    .content_head {
+        padding-right: 102px;
+        text-align: center;
+        font-size: 40px;
+    }
+    .introwrapper img {
+        display: none;
+    }
+    .main_art{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .art_header {
+        font-size: 50px;
+    }
+    .art_content {
+        padding-top: 12px;
+        font-size: 13px;
+    }
+    .art_left,.art_right{
+        padding: 10px 0px;
+        width: 340px;
+height: 306px;
+    }
+    .gallery_head {
+        font-size: 55px;
+    }
+    .img_show{
+        margin: 0px 20px;
+    }
+    .row_wise{
+        grid-template-columns: 1fr;
+    gap: 5px;
+    margin-bottom: 584px;
+    }
+    .cimg {
+        width:330px;
+        height: 330px;
+        margin-left: 37px;
+    }
+    .light_effect {
+        width: 330px;
+        height: 330px;
+        left: 67px;
+    }
+    .light {
+        width: 165px;
+    margin-left: 117px;
+    }
+    .img_show{
+        height: 50vh;
+        margin-bottom: 0px;
+    }
+}
+@media only screen  and (max-width: 536px){
+    .gallery_head {
+        font-size: 40px;
+      }
+    .cimg {
+        width: 247px;
+height: 247px;
+margin-left: 12px
+    }
+    .light_effect {
+        width: 247px;
+height: 247px;
+left: 42px;
+    }
+    .light {
+        width: 125px;
+margin-left: 75px;
+    }
+}
